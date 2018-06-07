@@ -213,7 +213,6 @@ def cycle():
    global f # опускаем флаг для добавочного. Если он опущен (0) то будет ВАМ ПОВЫЛАЗИЛО?
    f=0
    phar.seek(0)
-  #bot.send_message("163022030", phar[r2])#Test
    #выход вани 3
    if all (x in tarmsg2 for x in vano):
      time.sleep(1)
@@ -250,7 +249,6 @@ def cycle():
   #добавочное сообщение и запоминание его статуса
    with open ('/var/tele/tarbot/phrases/fear') as evil: # опять же октрытие для актуализации базы
      bot.send_message("-227007340","Вам что повылазило там!? "+evil.readlines()[r3])
-  #bot.send_message("163022030","Вам что повылазило там!? "+evil[r3])#Test
    laststate3=r3
    evil.closed
 
